@@ -3,6 +3,13 @@ const userRoutes = require('./user-routes');
 const User = require('./User');
 const Post = require('./Post');
 
-router.use('/users', userRoutes);
+User.hasMany(Post, {
+    foreignKey: 'user_id'
+});
 
-module.exports = router;
+Post.belongsTo(User, {
+    foreignKey: 'user_id',
+    onDelete: 'SET NULL'
+});
+
+module.exports = { User, Post }; 
