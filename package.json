@@ -1,0 +1,25 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "An application which allows users to publish posts and view/comment on others' posts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amnasyeda/tech-blog.git"
+  },
+  "keywords": [
+    "mysql2",
+    "express",
+    "handlebars"
+  ],
+  "author": "Amna syeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amnasyeda/tech-blog/issues"
+  },
+  "homepage": "https://github.com/amnasyeda/tech-blog#readme"
+}
