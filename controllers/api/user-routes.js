@@ -38,6 +38,15 @@ router.post('/login', (req, res) => {
         }
     }).then(dbUserData => {
         if (!dbUserData) {
+            .then(dbUserData => {
+                req.session.save(() => {
+                    req.session.user_id = dbUserData.id;
+                    req.session.username = dbUserData.username;
+                    req.session.loggedIn = true;
+    
+                    res.json(dbUserData);
+                });
+            })
             res.status(400).json({ message: 'No user with that email address!' });
             return;
         }
@@ -89,7 +98,26 @@ router.delete('/:id', (req, res) => {
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
+
+            req.session.save(() => {
+                req.session.user_id = dbUserData.id;
+                req.session.username = dbUserData.username;
+                req.session.loggedIn = true;
+    
+                res.json({ user: dbUserData, message: 'You are now logged in!' });
+            });
         })
+        router.post('/logout', (req, res) => {
+            if (req.session.loggedIn) {
+                req.session.destroy(() => {
+                    res.status(204).end();
+                });
+            } else {
+                res.status(404).end();
+            }
+        });
 });
+router.put('/:id', (req, res) => {
+    User.update(req.body, {
 
 module.exports = router; 
