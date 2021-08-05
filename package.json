@@ -2,9 +2,9 @@
   "name": "tech-blog",
   "version": "1.0.0",
   "description": "An application which allows users to publish posts and view/comment on others' posts.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js"
   },
   "repository": {
@@ -21,5 +21,18 @@
   "bugs": {
     "url": "https://github.com/amnasyeda/tech-blog/issues"
   },
-  "homepage": "https://github.com/amnasyeda/tech-blog#readme"
+  "homepage": "https://github.com/amnasyeda/tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
