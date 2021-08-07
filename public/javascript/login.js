@@ -15,12 +15,14 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }
-    }
-}
+        } else {
+        alert('Incorrect email or password');
+        };
+    }    
 
 async function signupFormHandler(event) {
     event.preventDefault();
@@ -39,12 +41,14 @@ async function signupFormHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
-        // check response status
         if (response.ok) {
             console.log('success');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }
+    } else {
+        window.alert('You must enter a valid username, email, and password');
     };
 };
 
