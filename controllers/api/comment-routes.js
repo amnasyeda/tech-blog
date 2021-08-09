@@ -26,7 +26,7 @@ router.post('/', withAuth, (req, res) => {
     }
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', withAuth, (req, res) => {
     Comment.destroy({
         where: {
             id: req.params.id
@@ -37,7 +37,7 @@ router.delete('/:id', (req, res) => {
                 res.status(404).json({ message: 'No comment found!'});
                 return;
             }
-            res.status(404).json({ message: 'No comment found!' });
+            res.json(dbCommentData);
         })
         .catch(err => {
             console.log(err);
