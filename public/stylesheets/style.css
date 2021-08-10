@@ -14,7 +14,7 @@ body, html {
 
   a {
     text-decoration: none;
-    color: #9dd18e;
+    color: #48c026;
     font-weight: bold;
     transition: color .1s;
   }
@@ -89,6 +89,7 @@ body, html {
   main {
     flex: 1;
     padding: 2% 4%;
+    color: #08661d;
   }
   
   .btn-no-style {
@@ -98,7 +99,7 @@ body, html {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #9dd18e;
+    color: #48c026;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -202,5 +203,5 @@ body, html {
     padding: 1%;
     font-size: 110%;
     background-color: #1a0e09;
-    color: #9dd18e;
+    color: #48c026;
   }
