@@ -16,9 +16,15 @@ The user will first clone this repository and have Node.js, Express.js, and MySq
 ## Usage
 The application will first prompt the user to create an account or log in to their already existing account. Once they have successfully logged in, the user will be prompted to their dashboard in which they can create, edit, or delete posts or view and comment on posts made and posted by others. 
 
-### Demo 
+<img width="887" alt="edit:delete a post" src="https://user-images.githubusercontent.com/81194686/128913097-4022bd06-bd76-4022-aa9f-e103d5c897a4.png">
+
+<img width="710" alt="multiple users" src="https://user-images.githubusercontent.com/81194686/128913115-3ae8123e-3176-4537-b99e-9e39cc4d53ab.png">
+
+<img width="710" alt="all posts stored" src="https://user-images.githubusercontent.com/81194686/128913142-a1541c52-2de3-436b-8435-13b490eaebeb.png">
+
 
 ### Deployed Application
+* [Go to Site](https://evening-depths-45912.herokuapp.com/)
 
 ## Tools
 * JavaScript
