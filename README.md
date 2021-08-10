@@ -11,7 +11,7 @@ A blogging application which allows developers to publish posts in their blog an
 * [License](#license)
 
 ## Installation
-The user will first clone this repository and have Node.js, Express.js, and MySql installed on their computer. To install these packages, the user will type `npm install <required-package>` in the command line. The user will then run `mysql -u root -p` in the command line and will be prompted to enter their password. Next, the user will run `source db/schema.sql` in order to create the database on their computer via MySQL. They will then quit mysql and reload the terminal and run `npm start` in order to start the server. 
+The user will first clone this repository and have Node.js, Express.js, and MySQL installed on their computer. To install these packages, the user will type `npm install <required-package>` in the command line. The user will then run `mysql -u root -p` in the command line and will be prompted to enter their password. Next, the user will run `source db/schema.sql` in order to create the database on their computer via MySQL. They will then quit mysql and reload the terminal and run `npm start` in order to start the server. 
 
 ## Usage
 The application will first prompt the user to create an account or log in to their already existing account. Once they have successfully logged in, the user will be prompted to their dashboard in which they can create, edit, or delete posts or view and comment on posts made and posted by others. 
