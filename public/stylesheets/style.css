@@ -6,24 +6,25 @@ body, html {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    color: #333;
-    background-color: #c6d9c0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 1, 2);
+    font-weight: bold;
+    background-color: #bee4b2;
   }
 
   a {
     text-decoration: none;
-    color: #a5e7b5c9;
+    color: #9dd18e;
     font-weight: bold;
     transition: color .1s;
   }
 
   a:hover {
-    color:#9be4abc9;
+    color: #3670b6;
   }
 
   button {
-    background-color: #881409;
+    background-color: #5a82cc;
     border: 0;
     padding: 1%;
     color: white;
@@ -34,7 +35,7 @@ body, html {
   }
   
   button:hover {
-    background-color: #65b89d;
+    background-color: #b41e1ec9;
   }
   
   textarea, input {
@@ -77,11 +78,12 @@ body, html {
     align-items: center;
     padding: 2%;
     background-color: #1a0e09;
-  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   header h1 {
     font-size: 1.4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   main {
@@ -90,12 +92,13 @@ body, html {
   }
   
   .btn-no-style {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #c6d9c0;
+    color: #9dd18e;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -108,22 +111,23 @@ body, html {
   }
   
   .delete-post-btn {
-    background-color: #bf5f56;
+    background-color: #ad4239;
   }
   
   .delete-post-btn:hover {
-    background-color: #65b89d;
+    background-color: #1146a7c9;
   }
   
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: #3054b4;
   }
   
   .post h2 {
@@ -137,12 +141,12 @@ body, html {
   
   .meta a, 
   .edit-link {
-    color: #bf5f56;
+    color: #1146a7c9;
   }
   
   .meta a:hover,
   .edit-link:hover {
-    color: #65b89d;
+    color: #1146a7c9;
   }
   
   .edit-link {
@@ -151,7 +155,7 @@ body, html {
   }
   
   .edit-anc {
-    color: #bf5f56;
+    color: #1146a7c9;
   }
   
   .comment-form {
@@ -161,11 +165,12 @@ body, html {
   .comment {
     padding: 1%;
     margin-bottom: 1%;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   
   .comment:nth-child(odd) {
-    background-color: rgba(191, 95, 86, 0.5);
+    background-color: rgba(66, 169, 228, 0.5);
   }
   
   .comment .meta {
@@ -197,5 +202,5 @@ body, html {
     padding: 1%;
     font-size: 110%;
     background-color: #1a0e09;
-    color: #b6e4a8;
+    color: #9dd18e;
   }
